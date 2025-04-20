@@ -1,254 +1,264 @@
 import java.util.Arrays;
-import java.util.Scanner;
-import java.util.Arrays;
+import java.util.*;
+ 
 
-// public class Demo {
-//   public static void main(String[] args) {
-//     // System.out.println("Hello, World!");
-//     // System.out.println("Welcome to the Java programming language.");
-//     // String sachin = "Sachin Tendulkar";
-//     // System.out.println(sachin);
-//     // // int age = 50;
+import Calculator.*;
+ 
 
-//     // // System.out.println("Sachin's age is: " + age);
+public class Demo {
+  public static void main(String[] args) {
+    // System.out.println("Hello, World!");
+    // System.out.println("Welcome to the Java programming language.");
+    // String sachin = "Sachin Tendulkar";
+    // System.out.println(sachin);
+    // // int age = 50;
 
-//     // // int number = age;
-//     // // System.out.println("The number is: " + number);
+    // // System.out.println("Sachin's age is: " + age);
 
-//     // byte age =30;
-//     // System.out.println("Sachin's age is: " + age);
-//     // int number = 100;
-//     // int number2 = 1234567890;
-//     // float number3 = 123.45f;
-//     // char character = 'A';
-//     // System.out.println("character: " + character);
-//     // System.out.println("number3: " + number3);
-//     // System.out.println("The number is: " + number2);
-//     // System.out.println("The number is: " + number);
+    // // int number = age;
+    // // System.out.println("The number is: " + number);
 
-//     // STRINGS ARE IMMUTABLE IN THE JAVA PROGRAMMING LANGUAGE
-//     // String name = "Sachin Tendulkar";
-//     // String newName ;
-//     // newName =new String("sachin pal ");
-//     // System.out.println(newName);
-//     // System.out.println(name.length());
+    // byte age =30;
+    // System.out.println("Sachin's age is: " + age);
+    // int number = 100;
+    // int number2 = 1234567890;
+    // float number3 = 123.45f;
+    // char character = 'A';
+    // System.out.println("character: " + character);
+    // System.out.println("number3: " + number3);
+    // System.out.println("The number is: " + number2);
+    // System.out.println("The number is: " + number);
 
-//     // String name3= name + " and " + newName;
-//     // System.out.println(name3);
+    // STRINGS ARE IMMUTABLE IN THE JAVA PROGRAMMING LANGUAGE
+    // String name = "Sachin Tendulkar";
+    // String newName ;
+    // newName =new String("sachin pal ");
+    // System.out.println(newName);
+    // System.out.println(name.length());
 
-//     // System.out.println(name.charAt(0));
+    // String name3= name + " and " + newName;
+    // System.out.println(name3);
 
-//     // String newString= name.replace("Sachin", "pikachu");
-//     // System.out.println(newString);
+    // System.out.println(name.charAt(0));
 
-//     // System.out.println(name.substring(0, 4));
+    // String newString= name.replace("Sachin", "pikachu");
+    // System.out.println(newString);
 
-//     // java me ye direct array print nahi hota hai
-//     // int[] numbers = new int[5];
-//     // numbers[0] = 10;
-//     // numbers[1] = 20;
-//     // numbers[2] = 30;
-//     // numbers[3] = 40;
-//     // numbers[4] = 50;
+    // System.out.println(name.substring(0, 4));
 
-//     // System.out.println(numbers);
-//     // for (int i = 0; i < numbers.length; i++) {
-//     // System.out.println("The number is: " + numbers[i]);
-//     // }
-//     // // automatically array me garbage ki jagah 0 hota hai or boolena ke liye
-//     // false
+    // java me ye direct array print nahi hota hai
+    // int[] numbers = new int[5];
+    // numbers[0] = 10;
+    // numbers[1] = 20;
+    // numbers[2] = 30;
+    // numbers[3] = 40;
+    // numbers[4] = 50;
 
-//     // boolean[] marks = new boolean[3];
-//     // System.out.println(marks[0]);
+    // System.out.println(numbers);
+    // for (int i = 0; i < numbers.length; i++) {
+    // System.out.println("The number is: " + numbers[i]);
+    // }
+    // // automatically array me garbage ki jagah 0 hota hai or boolena ke liye
+    // false
 
-//     // System.out.println("Array length is: " + numbers.length);
-//     // Arrays.sort(numbers);
+    // boolean[] marks = new boolean[3];
+    // System.out.println(marks[0]);
 
-//     // System.out.println("sorted " + numbers[0]);
+    // System.out.println("Array length is: " + numbers.length);
+    // Arrays.sort(numbers);
 
-//     ///    2d array  
+    // System.out.println("sorted " + numbers[0]);
 
-//     // int [][] finalMarks ={{45,65,65,80},{77,56,82,20}};
-//     // System.out.println(finalMarks[0][0]);
+    ///    2d array  
 
-//     // Casting change the type of the variable can be implicit and explicit
+    // int [][] finalMarks ={{45,65,65,80},{77,56,82,20}};
+    // System.out.println(finalMarks[0][0]);
 
-//     // double price = 100.00;
-//     // double finalPrice = price + 18; // implicit casting
-//     // // double finalPrice = price + 18.0; // implicit casting
+    // Casting change the type of the variable can be implicit and explicit
 
-//     // System.out.println(finalPrice);
+    // double price = 100.00;
+    // double finalPrice = price + 18; // implicit casting
+    // // double finalPrice = price + 18.0; // implicit casting
 
-//     // // explicit casting // data can lost
-//     // int price2 = 100;
-//     // int finalPrice2 = price2 + (int)18.18;
+    // System.out.println(finalPrice);
 
-//     // System.out.println(finalPrice2);
+    // // explicit casting // data can lost
+    // int price2 = 100;
+    // int finalPrice2 = price2 + (int)18.18;
 
-//     // CONSTANTS 4
+    // System.out.println(finalPrice2);
 
-//     // float pi = 3.14f; // normal variable
-//     // // pi = 3.14159f; // normal variable can be changed
-//     // pi = 3.14159f; // normal variable can be changed
+    // CONSTANTS 4
 
-//     // System.out.println(pi);
-//     // final float PI = 3.14f; // constant variable
+    // float pi = 3.14f; // normal variable
+    // // pi = 3.14159f; // normal variable can be changed
+    // pi = 3.14159f; // normal variable can be changed
 
-//     // System.out.println(PI);
+    // System.out.println(pi);
+    // final float PI = 3.14f; // constant variable
 
-//     // Operators in java
+    // System.out.println(PI);
 
-//     // int a = 10;
-//     // int b = 20;
+    // Operators in java
 
-//     // int sum = a + b; // addition
-//     // int sub = a - b; // subtraction
-//     // int mul = a * b; // multiplication
-//     // double div = b / a; // division
-//     // int mod = a % b; // modulus
-//     // int inc = a++; //post increment
-//     // int dec = a--; // post decrement
+    // int a = 10;
+    // int b = 20;
 
-//     // System.out.println("sum: " + sum);
-//     // System.out.println("sub: " + sub);
-//     // System.out.println("mul: " + mul);
-//     // System.out.println("div: " + div);
-//     // System.out.println("mod: " + mod);
-//     // System.out.println("inc: " + inc);
-//     // System.out.println("dec: " + dec);
+    // int sum = a + b; // addition
+    // int sub = a - b; // subtraction
+    // int mul = a * b; // multiplication
+    // double div = b / a; // division
+    // int mod = a % b; // modulus
+    // int inc = a++; //post increment
+    // int dec = a--; // post decrement
 
-//     // Maths class in java
+    // System.out.println("sum: " + sum);
+    // System.out.println("sub: " + sub);
+    // System.out.println("mul: " + mul);
+    // System.out.println("div: " + div);
+    // System.out.println("mod: " + mod);
+    // System.out.println("inc: " + inc);
+    // System.out.println("dec: " + dec);
 
-//     // System.out.println(Math.max(5,6)); // absolute value
-//     // System.out.println(Math.min(5,6)); // absolute value
+    // Maths class in java
 
-//     // System.out.println((int)Math.random()*10 +1);
+    // System.out.println(Math.max(5,6)); // absolute value
+    // System.out.println(Math.min(5,6)); // absolute value
 
-//     // taking the input from the user
+    // System.out.println((int)Math.random()*10 +1);
 
-//     Scanner sc = new Scanner(System.in);
-//     // System.out.print("Input the age of sachin: ");
-//     // int age = sc.nextInt();
-//     // System.out.println("The age of sachin is: " + age);
+    // taking the input from the user
 
-//     // System.out.println("What is your name : " );
-//     // String name = sc.next(); // taking only one word input
-//     // System.out.println("The name of sachin is: " + name);
+    Scanner sc = new Scanner(System.in);
+    // System.out.print("Input the age of sachin: ");
+    // int age = sc.nextInt();
+    // System.out.println("The age of sachin is: " + age);
 
-//     // System.out.println("What is your name : " );
-//     // String name = sc.nextLine(); // taking whole input
-//     // System.out.println("The name of sachin is: " + name);
+    // System.out.println("What is your name : " );
+    // String name = sc.next(); // taking only one word input
+    // System.out.println("The name of sachin is: " + name);
 
-//     // COMPARISON OPERATORS IN JAVA
-//     // a==b
-//     // a!=b
-//     // a>b
-//     // a<b
-//     // a>=b
-//     // a<=b
+    // System.out.println("What is your name : " );
+    // String name = sc.nextLine(); // taking whole input
+    // System.out.println("The name of sachin is: " + name);
 
-//     // if -else statement in java
+    // COMPARISON OPERATORS IN JAVA
+    // a==b
+    // a!=b
+    // a>b
+    // a<b
+    // a>=b
+    // a<=b
 
-//     Scanner sc1 = new Scanner(System.in);
+    // if -else statement in java
 
-//     // System.out.println("Enter the value of a: ");
-//     // int a = sc1.nextInt();
-//     // if (a > 5) {
-//     // System.out.println("a is greater than 5");
-//     // } else if (a < 5) {
-//     // System.out.println("a is less than 5");
-//     // } else {
-//     // System.out.println("a is equal to 5");
-//     // }
+    Scanner sc1 = new Scanner(System.in);
 
-//     // boolean isSun = true;
+    // System.out.println("Enter the value of a: ");
+    // int a = sc1.nextInt();
+    // if (a > 5) {
+    // System.out.println("a is greater than 5");
+    // } else if (a < 5) {
+    // System.out.println("a is less than 5");
+    // } else {
+    // System.out.println("a is equal to 5");
+    // }
 
-//     // if (isSun) {
-//     // System.out.println("Day");
-//     // } else {
-//     // System.out.println("Night");
-//     // }
+    // boolean isSun = true;
 
-//     // Logical Operatrs in java
+    // if (isSun) {
+    // System.out.println("Day");
+    // } else {
+    // System.out.println("Night");
+    // }
 
-//     // AND operator
-//     // OR operator
+    // Logical Operatrs in java
 
-//     // NOT operator
+    // AND operator
+    // OR operator
 
-//     String property = "Chutiya";
-//     String property2 = "Chutiyapa ";
+    // NOT operator
 
-//     // if(property== "Chutiya" && property2=="Chutiyapa"){
-//     // System.out.println("Bhadwa hai");
-//     // }else{
-//     // System.out.println("Bhadwa nahi hai");
-//     // }
+    String property = "Chutiya";
+    String property2 = "Chutiyapa ";
 
-//     // if(property== "Chutiya" || property2=="Chutiyapa"){
-//     // System.out.println("Bhadwa hai");
-//     // }else{
-//     // System.out.println("Bhadwa nahi hai");
-//     // }
+    // if(property== "Chutiya" && property2=="Chutiyapa"){
+    // System.out.println("Bhadwa hai");
+    // }else{
+    // System.out.println("Bhadwa nahi hai");
+    // }
 
-//     // boolean isAdult = false;
-//     // if(!isAdult) {
-//     // System.out.println("Adult hai");
-//     // }
-//     // else {
-//     // System.out.println("Adult nahi hai");
-//     // }
+    // if(property== "Chutiya" || property2=="Chutiyapa"){
+    // System.out.println("Bhadwa hai");
+    // }else{
+    // System.out.println("Bhadwa nahi hai");
+    // }
 
-//     // switch case in java
+    // boolean isAdult = false;
+    // if(!isAdult) {
+    // System.out.println("Adult hai");
+    // }
+    // else {
+    // System.out.println("Adult nahi hai");
+    // }
 
-//     int day = 1;
+    // switch case in java
 
-//     // switch (day) {
-//     //   case 1:
-//     //     System.out.println("Monday");
+    int day = 1;
 
-//     //     break;
-//     //   case 2:
-//     //     System.out.println("Tuesday");
-//     //     break;
-//     //   case 3:
-//     //     System.out.println("Wednesday");
-//     //     break;
-//     //   case 4:
-//     //     System.out.println("Thursday");
-//     //     break;
-//     //   case 5:
-//     //     System.out.println("Friday");
-//     //     break;
-//     //   case 6:
-//     //     System.out.println("Saturday");
-//     //     break;
-//     //   case 7:
-//     //     System.out.println("Sunday");
-//     //     break;
-//     //   default:
-//     //     System.out.println("Invalid day");
-//     //     break;
-//     // }
+    // switch (day) {
+    //   case 1:
+    //     System.out.println("Monday");
+
+    //     break;
+    //   case 2:
+    //     System.out.println("Tuesday");
+    //     break;
+    //   case 3:
+    //     System.out.println("Wednesday");
+    //     break;
+    //   case 4:
+    //     System.out.println("Thursday");
+    //     break;
+    //   case 5:
+    //     System.out.println("Friday");
+    //     break;
+    //   case 6:
+    //     System.out.println("Saturday");
+    //     break;
+    //   case 7:
+    //     System.out.println("Sunday");
+    //     break;
+    //   default:
+    //     System.out.println("Invalid day");
+    //     break;
+    // }
 
 
 
-//     // TRY AND THE CATCH BLOCK IN JAVA
+    // TRY AND THE CATCH BLOCK IN JAVA
 
-//   // try{
+  // try{
     
-//   //   int [] numbers = {1, 2, 3, 4, 5};
-//   //    System.out.println(numbers[5]); 
-//   // }
-//   // catch(Exception exception) {
-//   //   System.out.println("chud gayi array ki .........");
-//   // }
+  //   int [] numbers = {1, 2, 3, 4, 5};
+  //    System.out.println(numbers[5]); 
+  // }
+  // catch(Exception exception) {
+  //   System.out.println("chud gayi array ki .........");
+  // }
 
-//   // System.out.println("End of the program");
-// //   memme("my meme :" +"chud gai chud gai.............. aah hh ahh ");
-// //   }
+  // System.out.println("End of the program");
+//   memme("my meme :" +"chud gai chud gai.............. aah hh ahh ");
+//   }
 
-// // public static void memme(String meme){
+// public static void memme(String meme){
 
-// //   System.out.println(meme);
-// }
+//   System.out.println(meme);
+
+// USING THE PACKAGE IN JAVA
+ Calculator calculator =new Calculator();
+ calculator.showMsg();
+calculator.callClassDemo();
+ 
+  }
+}
